@@ -20,7 +20,6 @@ function updateCarousel() {
     carouselInner.style.transform = `translateX(${offset}%)`;
 }
 
-// Auto slide every 5 seconds
 setInterval(() => {
     nextButton.click();
 }, 5000);
@@ -48,10 +47,5 @@ function showTab(tabName) {
     document.querySelector(`.tab[onclick="showTab('${tabName}')"]`).classList.add("active");
 }
 
-showTab('general'); // Initialize with the General tab active
-
-
-
-
-
+showTab('general');
 
